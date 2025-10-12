@@ -20,7 +20,7 @@
 - Engagement politique
 - Appartenance éventuelle à un courant de pensée
 
-# Organisations
+# Organisation
 - Nom
 - Lieu
 - Type d’organisation (universitaire, militante, etc.)
@@ -31,7 +31,7 @@
 - Eventuelle date de dissolution 
 - Raisons de l’éventuelle dissolution
 
-# Lieux
+# Lieu
 - Nom
 - Coordonnées géographiques
 - Type de lieu (pays, université, etc.)
@@ -39,7 +39,7 @@
 - Langues parlées dans le(s) pays
 - Classement/réputation à l’international (pour les universités)
 
-# Relations entre les objets
+# Relation entre les objets
 - Personne est né(e) dans tel lieu
 - Parents de personne sont nés dans tel lieu
 - Personne a immigré ou non
