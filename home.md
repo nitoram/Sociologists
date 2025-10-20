@@ -10,6 +10,6 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 # Création de la base de données
 
-- [Modèle conceptuel vectoriel]()
-- [Modèle conceptuel png]()
-- [Commentaire du modèle conceptuel]()
+- [Modèle conceptuel vectoriel](MCD.drawio)
+- [Modèle conceptuel png](MCD.png)
+- [Commentaire du modèle conceptuel](MCD_commentaire.md)
