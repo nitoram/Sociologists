@@ -42,4 +42,4 @@ Propriétés : nom, date de début, éventuelle date de fin, définition
 
 # Organisation 
 Entité via laquelle est poursuivit une formation ou une occupation. Classe objet.
-Propriétés : nom, définition 
+Propriétés : nom, définition
