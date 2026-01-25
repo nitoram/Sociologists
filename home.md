@@ -10,6 +10,32 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 # Création de la base de données
 
+- [Esquisse du modèle conceptuel](esquisse_modèle_conceptuel.jpg)
 - [Modèle conceptuel vectoriel](MCD.drawio)
 - [Modèle conceptuel png](MCD.png)
 - [Commentaire du modèle conceptuel](MCD_commentaire.md)
+
+# Base de données
+
+- [Base de données saisie manuellement](sociologists.db)
+- [Exportation table 'person']()
+- [Expportation table 'birth']()
+- [Exportation table 'area_education']()
+- [Exportation table 'education']()
+- [Exportation table 'geographical_place_type']()
+- [Exportation table 'geographical_place']()
+- [Exportation table 'occupation']()
+- [Exportation table 'organisation_type']()
+- [Exportation table 'organisation']()
+- [Exportation table 'pursuit']()
+
+# Exploration de la base de données
+
+- [Requêtes SQL]()
+- [Exportation des pays de naissance]()
+- [Exportation de l'appartenance à des organsiations]()
+
+# Importation des données de DBpedia
+
+- [Requêtes SQL utilisées]()
+- [Base de données importées de DBpedia]()
