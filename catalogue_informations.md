@@ -4,18 +4,18 @@
 - Nom et prénom
 - Genre
 - Date de naissance
-- Date de décès éventuel
+- Date de décès (éventuellement)
 - Lieu de naissance
 - Origine
-- Nationalité
+- Nationalité(s)
 - Noms des parents
-- Origine des parents
-- Occupations professionnelles des parents
+- Origine(s) des parents
+- Occupation(s) professionnelle(s) des parents
 - Origine sociale
-- Date des études
-- Lieu des études
-- Occupation professionelle
-- Lieu d’exercice professionnel
+- Dates des études
+- Lieu(x) des études
+- Occupation(s) professionelle(s)
+- Lieu(x) d’exercice professionnel
 - Appartenance éventuelle à des organisations intellectuelles ou politique
 - Engagement politique
 - Appartenance éventuelle à un courant de pensée
@@ -34,10 +34,9 @@
 # Lieu
 - Nom
 - Coordonnées géographiques
-- Type de lieu (pays, université, etc.)
-- PIB pour le(s) pays
-- Langues parlées dans le(s) pays
-- Classement/réputation à l’international (pour les universités)
+- Type de lieu (pays, ville, etc.)
+- PIB pour les pays
+- Langues parlées dans les pays
 
 # Relation entre les objets
 - Personne est né(e) dans tel lieu
