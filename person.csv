@@ -1,0 +1,31 @@
+"pk_person","name","gender","date_birth","date_death","defintion","fk_person_mere","fk_person_pere"
+1,Howard Saul Becker,Man,"1928-05-18","2023-08-16","Howard Saul Becker (April 18, 1928 – August 16, 2023) was an American sociologist who taught at Northwestern University. Becker made contributions to the sociology of deviance, sociology of art, and sociology of music.",12,11
+2,Pierre Bourdieu,Man,"1930-08-01","2002-01-23","Pierre Bourdieu (UK: /bʊərˈdjɜː/, US: /bʊərˈd(j)uː/; French: [pjɛʁ buʁdjø]; Gascon: Pèir Bordièu; 1 August 1930 – 23 January 2002) was a French sociologist and public intellectual.[3][4] Bourdieu's contributions to the sociology of education, the theory of sociology, and sociology of aesthetics have achieved wide influence in several related academic fields (e.g. anthropology, media and cultural studies, education, popular culture, and the arts).",14,13
+3,Judith Butler,Non-binary,"1956-02-24",,"Judith Pamela Butler[1] (born February 24, 1956) is an American feminist philosopher and gender studies scholar whose work has influenced political philosophy, ethics, and the fields of third-wave feminism,[2] queer theory,[3] and literary theory.",,
+4,Christine Delphy,Woman,"1941-12-09",,"Christine Delphy (born 1941) is a French feminist sociologist, writer and theorist. Known for pioneering materialist feminism, she co-founded the French women's liberation movement (Mouvement de Libération des Femmes, or MLF) in 1970 and the journal Nouvelles questions féministes (New Feminist Issues) with Simone de Beauvoir in 1981.",16,15
+5,W.E.B Du Bois,Man,"1868-02-23","1963-08-27","William Edward Burghardt Du Bois (/duːˈbɔɪs/ doo-BOYSS;[1][2] February 23, 1868 – August 27, 1963) was an American sociologist, writer, historian, and Pan-Africanist civil rights activist.
+
+",18,17
+6,Emile Durkheim,Man,"1858-05-15","1917-11-15","David Émile Durkheim (/ˈdɜːrkhaɪm/;[1] French: [emil dyʁkɛm] or [dyʁkajm]; 15 April 1858 – 15 November 1917) was a French sociologist. Durkheim formally established the academic discipline of sociology and is commonly cited as one of the principal architects of modern social science, along with both Karl Marx and Max Weber.",20,19
+7,Norbert Elias,Man,"1897-06-22","1990-08-01",Norbert Elias (German: [ˈnɔʁbɛʁt eˈliːas]; 22 June 1897 – 1 August 1990) was a German sociologist who later became a British citizen. He is especially famous for his theory of civilizing/decivilizing processes.,22,21
+8,Erving Goffman,Man,"1922-06-11","1982-09-19","Erving Goffman (11 June 1922 – 19 November 1982) was a Canadian-born American sociologist, social psychologist, and writer, considered by some ""the most influential American sociologist of the twentieth century"".",24,23
+9,Herbert Richard Hoggart,Man,"1918-09-24","2014-05-10","Herbert Richard Hoggart FRSL (24 September 1918 – 10 April 2014) was an English academic whose career covered the fields of sociology, English literature and cultural studies, with emphasis on British popular culture.",26,25
+10,Charles Wright Mills,Man,"1916-08-28","1962-03-20","Charles Wright Mills (August 28, 1916 – March 20, 1962) was an American sociologist, and a professor of sociology at Columbia University from 1946 until his death in 1962. Mills published widely in both popular and intellectual journals, and is remembered for several books, such as The Power Elite, White Collar: The American Middle Classes, and The Sociological Imagination.",28,27
+11,Allan Becker,Man,"1902-04-02","1988-03-27",,,
+12,Donna Becker,Woman,"1904-12-31","1997",,,
+13,"",Man,,,,,
+14,,Woman,,,,,
+15,,Man,,,,,
+16,,Woman,,,,,
+17,Alfred Burghart Du Bois,Man,,,,,
+18,Mary Silvina Burghardt Du Bois,Woman,,,,,
+19,Moïse Durkheim,Man,,,,,
+20,Mélanie Isidor,Woman,,,,,
+21,Hermann Elias,Man,"1860","1940",,,
+22,Sophie Elias,Woman,"1875","1942",,,
+23,Max Goffman,Man,,,,,
+24,Anne Goffman,Woman,,,,,
+25,Tom Longfellow Hoggart,Man,"1880","1922",,,
+26,Adeline Hoggart,Woman,,,,,
+27,Charles Grover Mills,Man,"1889","1973",,,
+28,Frances Ursula Wright Mills,Woman,"1893","1989",,,
