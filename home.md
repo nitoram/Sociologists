@@ -18,16 +18,16 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 # Base de données
 
 - [Base de données saisie manuellement](sociologists.db)
-- [Exportation table 'person']()
-- [Expportation table 'birth']()
-- [Exportation table 'area_education']()
-- [Exportation table 'education']()
-- [Exportation table 'geographical_place_type']()
-- [Exportation table 'geographical_place']()
-- [Exportation table 'occupation']()
-- [Exportation table 'organisation_type']()
-- [Exportation table 'organisation']()
-- [Exportation table 'pursuit']()
+- [Exportation table 'person'](person.csv)
+- [Expportation table 'birth'](birth.csv)
+- [Exportation table 'area_education'](area_education.csv)
+- [Exportation table 'education'](education.csv)
+- [Exportation table 'geographical_place_type'](geographical_place_type.csv)
+- [Exportation table 'geographical_place'](geographical_place.csv)
+- [Exportation table 'occupation'](occupation.csv)
+- [Exportation table 'organisation_type'](organisation_type.csv)
+- [Exportation table 'organisation'](organisation.csv)
+- [Exportation table 'pursuit'](pursuit.csv)
 
 # Exploration de la base de données
 
@@ -37,5 +37,5 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 # Importation des données de DBpedia
 
-- [Requêtes SQL utilisées]()
+- [Requêtes SPARQL utilisées]()
 - [Base de données importées de DBpedia]()
