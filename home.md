@@ -31,9 +31,9 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 # Exploration de la base de données
 
-- [Requêtes SQL]()
-- [Exportation des pays de naissance]()
-- [Exportation de l'appartenance à des organsiations]()
+- [Requêtes SQL](requetes_sql.md)
+- [Exportation des pays de naissance](pays_naissance.csv)
+- [Exportation de l'appartenance à des organsiations](appartenance_organisations.csv)
 
 # Importation des données de DBpedia
 
