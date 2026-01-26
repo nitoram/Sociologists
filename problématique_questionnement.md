@@ -1,5 +1,5 @@
 # Problématique
-Le but de ce projet est de tenter de rendre compte de la manière dont se structure le champ de la sociologie et les acteurs qui y évoluent. Dans un premier temps, il s’agira de s’intéresser au parcours des sociologues ainsi qu’à leurs caractéristiques socio-démographiques et leur évolution dans le temps. Nous tâcherons ensuite de poser la question de l’impact géographique sur la carrière d’un.e sociologue, mais aussi de la possible corrélation entre l’appartenance à une organisation intellectuelle ou politique et les caractéristiques socio-démographiques des sociologues.
+Le but de ce projet est de tenter de rendre compte de la manière dont se structure le champ de la sociologie et les acteurs qui y évoluent. Dans un premier temps, il s’agira de s’intéresser au parcours des sociologues ainsi qu’à leurs caractéristiques socio-démographiques et leur évolution dans le temps. Nous tâcherons ensuite de poser la question de l’impact géographique sur la carrière d’un(e) sociologue, mais aussi de la possible corrélation entre l’appartenance à une organisation intellectuelle ou politique et les caractéristiques socio-démographiques des sociologues.
 
 # Questions de recherche
 - Quels sont les parcours les plus communs chez les sociologues ? Existent-ils une corrélation entre origine sociale et types de parcours ?

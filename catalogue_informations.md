@@ -4,7 +4,7 @@
 - Nom et prénom
 - Genre
 - Date de naissance
-- Date de décès (éventuellement)
+- Date de décès (si applicable)
 - Lieu de naissance
 - Origine
 - Nationalité(s)
@@ -16,7 +16,7 @@
 - Lieu(x) des études
 - Occupation(s) professionelle(s)
 - Lieu(x) d’exercice professionnel
-- Appartenance éventuelle à des organisations intellectuelles ou politique
+- Appartenance éventuelle à des organisations intellectuelles ou politiques
 - Engagement politique
 - Appartenance éventuelle à un courant de pensée
 
@@ -38,7 +38,7 @@
 - PIB pour les pays
 - Langues parlées dans les pays
 
-# Relation entre les objets
+# Relations entre les objets
 - Personne est né(e) dans tel lieu
 - Parents de personne sont nés dans tel lieu
 - Personne a immigré ou non
