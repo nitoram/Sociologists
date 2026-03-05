@@ -39,3 +39,8 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 - [Requêtes SPARQL utilisées](dbpedia_import_sparql.md)
 - [Base de données importées de DBpedia](sociologists_import.db)
+
+# Exploration de Wikidata
+
+- [Inspection de la population]()
+- [Propriétés de la population]()
