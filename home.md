@@ -42,5 +42,4 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 # Exploration de Wikidata
 
-- [Inspection de la population]()
-- [Propriétés de la population]()
+- [Inspection des propriétés de la population](population_inspection.md)
