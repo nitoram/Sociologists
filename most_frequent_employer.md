@@ -1,11 +1,13 @@
 # Most frequent employer 
+Ici nous cherchons à déterminer quels sont les employeurs les plus fréquents des individus de notre population ce qui permet entre autre de déterminer des liens d'appartenance à des organisations. On constate que les sociologues sont très majoritairements employés par des universités.
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-SELECT ?employer ?employerLabel (COUNT(*) as ?eff)
-WHERE
+# Requête
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    SELECT ?employer ?employerLabel (COUNT(*) as ?eff)
+    WHERE
     {
 
         {
@@ -24,12 +26,12 @@ WHERE
       ?item wdt:P108 ?employer.
         ?employer rdfs:label ?employerLabel.
         FILTER(LANG(?employerLabel) = 'en')
-}  
-GROUP BY ?employer ?employerLabel 
-ORDER BY DESC(?eff)
-LIMIT 30
+    }  
+    GROUP BY ?employer ?employerLabel 
+    ORDER BY DESC(?eff)
+    LIMIT 30
 
-
+# Résultats
 | employer                                | employerLabel                                      | eff |
 | --------------------------------------- | -------------------------------------------------- | --- |
 | http://www.wikidata.org/entity/Q280413  | National Center for Scientific Research            | 151 |
@@ -64,13 +66,15 @@ LIMIT 30
 | http://www.wikidata.org/entity/Q230899  | University of Manchester                           | 48  |
 
 # Inspect the employer classes
+On va ensuite inspecter plus spécifiquement à quels types d'emplyoeurs nous avons affaire. On trouve que ce sont surtout des universités publiques qui employent les sociologues mais aussi certaines universités et institutions publiques.
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-SELECT ?class ?classLabel (COUNT(*) as ?eff)
-WHERE
+# Requête
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    SELECT ?class ?classLabel (COUNT(*) as ?eff)
+    WHERE
     {
         {
         SELECT DISTINCT ?item
@@ -91,11 +95,12 @@ WHERE
 		?employer wdt:P31 ?class.
         ?class rdfs:label ?classLabel.
         FILTER(LANG(?classLabel) = 'en')
-}  
-GROUP BY ?class ?classLabel 
-ORDER BY DESC(?eff)
-LIMIT 100
+    }  
+    GROUP BY ?class ?classLabel 
+    ORDER BY DESC(?eff)
+    LIMIT 100
 
+# Résultats
 | class                                     | classLabel                                                                                          | eff  |
 | ----------------------------------------- | --------------------------------------------------------------------------------------------------- | ---- |
 | http://www.wikidata.org/entity/Q875538    | public university                                                                                   | 3951 |
@@ -200,13 +205,15 @@ LIMIT 100
 | http://www.wikidata.org/entity/Q845392    | polytechnic                                                                                         | 22   |
 
 # Examples of private companies
+Pour finir nous allons donc tenter de cerner quels sont les insitutions privées qui employent des sociologues. Sans surprises, il s'agit surtout d'universités.
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-SELECT ?employer ?employerLabel ?classLabel (COUNT(*) as ?eff)
-WHERE
+# Requête
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    SELECT ?employer ?employerLabel ?classLabel (COUNT(*) as ?eff)
+    WHERE
     {
         {
         SELECT DISTINCT ?item
@@ -228,11 +235,12 @@ WHERE
         ?class rdfs:label ?classLabel.
         FILTER(LANG(?classLabel) = 'en')
 		FILTER regex(?classLabel, '.*business.*|.*enterprise.*|.*company.*') 
-}  
-GROUP BY ?employer ?employerLabel ?class ?classLabel 
-ORDER BY DESC(?eff) ?employer 
-LIMIT 20
+    }  
+    GROUP BY ?employer ?employerLabel ?class ?classLabel 
+    ORDER BY DESC(?eff) ?employer 
+    LIMIT 20
 
+# Résultats
 | employer                                  | employerLabel                  | classLabel         | eff |
 | ----------------------------------------- | ------------------------------ | ------------------ | --- |
 | http://www.wikidata.org/entity/Q49112     | Yale University                | production company | 61  |

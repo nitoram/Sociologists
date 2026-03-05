@@ -1,12 +1,14 @@
 # Most frequent associated fields of work
+Ici nous cherchons à voir quelles sont les autres occupations et domaines d'activités les plus associés à la carrière de sociologue. Si on constate que la sociologie est effectviement la discipline la plus commune dans laquelle travaillent les sociologues, on peut également noter plusieurs autres domaines d'activités affiliés tel que : la science politique, la philosophie, l'histoire et les études genre.
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+# Requête
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-SELECT ?object ?objectLabel (COUNT(*) as ?eff)
-WHERE
+    SELECT ?object ?objectLabel (COUNT(*) as ?eff)
+    WHERE
     {
         {
         SELECT DISTINCT ?item
@@ -24,12 +26,12 @@ WHERE
         ?item wdt:P101 ?object.
         ?object rdfs:label ?objectLabel.
         FILTER(LANG(?objectLabel) = 'en')
-}  
-GROUP BY ?object ?objectLabel 
-ORDER BY DESC(?eff)
-LIMIT 100
+    }  
+    GROUP BY ?object ?objectLabel 
+    ORDER BY DESC(?eff)
+    LIMIT 100
 
-
+# Résultats
 | object                                    | objectLabel                       | eff  |
 | ----------------------------------------- | --------------------------------- | ---- |
 | http://www.wikidata.org/entity/Q21201     | sociology                         | 4596 |

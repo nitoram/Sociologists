@@ -1,35 +1,8 @@
 # Incoming proprieties
 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX wikibase: <http://wikiba.se/ontology#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
-SELECT ?p ?propLabel ?eff  ('' as ?notes)
-WHERE {
-{
-    SELECT DISTINCT  ?p  (count(*) as ?eff)
-    WHERE {
-        ?item wdt:P31 wd:Q5; 
-             wdt:P569 ?birthDate.
-        BIND(REPLACE(str(?birthDate), "(.*)([0-9]{4})(.*)", "$2") AS ?year)
-        FILTER(xsd:integer(?year) > 1780 && xsd:integer(?year) < 2000)
-            {?item wdt:P106 wd:Q2306091}
-            UNION
-            {?item wdt:P101 wd:Q21201} 
+Pour plus d'informations concernant la requête utilisée consulter cette [page](population_inspection.md)
 
-    
-			?s ?p ?item.
-        }
-		GROUP BY ?p
-    }
-    ?prop wikibase:directClaim ?p .
-
-    ?prop rdfs:label ?propLabel.
-        FILTER(LANG(?propLabel) = 'en')
-    }  
-ORDER BY DESC(?eff) 
-
+# Résultats
 | p                                          | propLabel                                        | eff   | notes |
 | ------------------------------------------ | ------------------------------------------------ | ----- | ----- |
 | http://www.wikidata.org/prop/direct/P50    | author                                           | 21478 |       |

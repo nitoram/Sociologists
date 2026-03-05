@@ -1,12 +1,14 @@
 # Most frequent occupations
+Nous cherchons ici à voir quelles sont les occupations les plus fréquentes chez les idnividus membres de la population de sociologues à laquelle nous nous intéressons. On constate, sans grande surprise, que les occupations les plus communes sont celles de sociologues et d'enseignants à l'université. D'autres occupations notables sont celles d'écrivain et de politicien.
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX wd: <http://www.wikidata.org/entity/>
-PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+# Requête
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
-SELECT ?object ?objectLabel (COUNT(*) as ?eff)
-WHERE
+    SELECT ?object ?objectLabel (COUNT(*) as ?eff)
+    WHERE
     {
 
         {
@@ -25,11 +27,12 @@ WHERE
         ?item wdt:P106 ?object.
         ?object rdfs:label ?objectLabel.
         FILTER(LANG(?objectLabel) = 'en')
-}  
-GROUP BY ?object ?objectLabel 
-ORDER BY DESC(?eff)
-LIMIT 10
+    }  
+    GROUP BY ?object ?objectLabel 
+    ORDER BY DESC(?eff)
+    LIMIT 10
 
+# Résultats
 | object                                  | objectLabel         | eff   |
 | --------------------------------------- | ------------------- | ----- |
 | http://www.wikidata.org/entity/Q2306091 | sociologist         | 18372 |

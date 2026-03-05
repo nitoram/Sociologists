@@ -169,7 +169,7 @@ Le but de cette étape est d'avoir une meilleure compréhension de notre populat
      }  
     ORDER BY DESC(?eff) 
 
-Résultats de la requête sur cette [page]().
+Résultats de la requête sur cette [page](propriétés_effectifs.md).
 
 # Incoming proprieties
 
@@ -203,4 +203,4 @@ Résultats de la requête sur cette [page]().
     }  
     ORDER BY DESC(?eff) 
 
-Résultats de la requête sur cette [page]().
+Résultats de la requête sur cette [page](incoming_proprieties.md).

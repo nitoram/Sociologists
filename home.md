@@ -43,8 +43,8 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 # Exploration de Wikidata
 
 - [Inspection de la population](population_inspection.md)
-- [Liste de propriétés sortantes de la population]()
-- [Incoming proprieties]()
+- [Liste de propriétés sortantes de la population](propriétés_effectifs.md)
+- [Incoming proprieties](incoming_proprieties.md)
 - [Inspection de la propriété 'occupation'](most_frequent_occupation.md)
 - [Inspection de la propriété 'employer'](most_frequent_employer.md)
 - [Inspection de la propriété 'field of work](fields_of_work.md)
