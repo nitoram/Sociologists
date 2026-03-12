@@ -48,3 +48,7 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 - [Inspection de la propriété 'occupation'](most_frequent_occupation.md)
 - [Inspection de la propriété 'employer'](most_frequent_employer.md)
 - [Inspection de la propriété 'field of work](fields_of_work.md)
+
+# Wikidata : data production
+
+- [Importation de la population dans un triplestore](import_population.md)
