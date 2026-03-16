@@ -320,6 +320,96 @@ Résultat : 579
         }
     LIMIT 10
 
+# Find labels for persons without English labels
+
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+    SELECT DISTINCT ?item ?item_non_en_label
+    WHERE {
+        SERVICE <https://query.wikidata.org/sparql>
+            {
+                {
+                {?item wdt:P106 wd:Q2306091}
+                UNION
+                {?item wdt:P101 wd:Q21201}    
+
+                ?item wdt:P31 wd:Q5;
+                    wdt:P569 ?birthDate;
+
+            BIND(year(?birthDate) as ?year)
+            FILTER(xsd:integer(?year) > 1780 && xsd:integer(?year) < 2000 )
+            
+            MINUS {
+                ?item rdfs:label ?itemLabel.
+                FILTER(LANG(?itemLabel) = 'en')
+                }
+            }
+            ?item rdfs:label ?item_non_en_label                     
+        }
+    }
+    LIMIT 10
+
+# Insert non English Labels
+
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    PREFIX wikibase: <http://wikiba.se/ontology#>
+    PREFIX bd: <http://www.bigdata.com/rdf#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+    INSERT {
+
+            GRAPH <https://nitoram.github.io/Sociologists/graphs-defs.html#wikidata>
+            {
+            ?item rdfs:label ?item_non_en_label.
+            }
+    }
+    WHERE { 
+        SERVICE <https://query.wikidata.org/sparql>
+            {
+                {
+                {?item wdt:P106 wd:Q2306091}
+                    UNION
+                    {?item wdt:P101 wd:Q21201}   
+
+                ?item wdt:P31 wd:Q5;
+                    wdt:P569 ?birthDate; 
+
+            BIND(year(?birthDate) as ?year)
+            FILTER(xsd:integer(?year) > 1780 && xsd:integer(?year) < 2000 )
+            
+            MINUS {
+                ?item rdfs:label ?itemLabel.
+                FILTER(LANG(?itemLabel) = 'en')
+                }
+            }
+            ?item rdfs:label ?item_non_en_label                     
+        }
+    }
+
+Inspecting persons added
+
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    SELECT *
+    # SELECT (COUNT(*) AS ?number)
+    WHERE {
+        GRAPH <https://nitoram.github.io/Sociologists/graphs-defs.html#wikidata> {
+        ?item  a wd:Q5.
+        ?item rdfs:label ?label.
+        FILTER(LANG(?label) !='en')
+        }
+    }
+    LIMIT 20
+
 # Add label to the class "Person"
 
     PREFIX wd: <http://www.wikidata.org/entity/>
@@ -382,6 +472,25 @@ Résultat : 579
         wd:Q48264 rdfs:label "Gender Identity".
     }
     }
+
+# Verify the available classes
+
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+    select distinct ?class ?classLabel
+    where {
+
+        GRAPH <https://nitoram.github.io/Sociologists/graphs-defs.html#wikidata> {
+    ?s a ?class.
+    ?class rdfs:label ?classLabel
+    }
+    }
+
+Résulats : "Gender Identity" et "Person"
 
 # Verifiy imported triples and add label to genders
 
