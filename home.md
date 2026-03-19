@@ -52,3 +52,7 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 # Wikidata : data production
 
 - [Importation de la population dans un triplestore](import_population.md)
+
+# Wikidata : data analysis
+
+- [Distribution des naissances et du genre dans le temps]()
