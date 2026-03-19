@@ -55,4 +55,4 @@ Le but de ce projet est d'explorer la structure du champ discilpinaire de la soc
 
 # Wikidata : data analysis
 
-- [Distribution des naissances et du genre dans le temps]()
+- [Distribution des naissances et du genre dans le temps](Analyse/data_analysis/distribution_birth.md)
